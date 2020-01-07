@@ -125,5 +125,6 @@ class TestUserAddToBasketFromProductPage():
         book_price_in_basket = product_page.should_be_book_price_in_basket()  # save book price from the basket
         print(f'Book "{book_name_in_basket}" added to basket.')  # print book name from the basket
         print(f'Basket price is {book_price_in_basket}.')  # print book price from the basket
-        assert book_name == book_name_in_basket, "Book name on man page and in basket must be the same"  # verify name
-        assert book_price == book_price_in_basket, "Book price on man page and in basket must be the same"  # verify price
+        # verify book name and book price
+        assert book_name == book_name_in_basket, "Book name on man page and in basket must be the same"
+        assert book_price == book_price_in_basket, "Book price on man page and in basket must be the same"
